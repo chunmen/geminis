@@ -16,7 +16,9 @@ st.markdown(
     Gemini demo
 '''
 )
-key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"    
+key = st.secrets["my_credentials"]["key"]
+
+st.write("Your key is:", key)
 ##if "key" not in st.session_state:
 ##    st.session_state.key = None
 
@@ -26,4 +28,4 @@ key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"
 ##    st.info("Please add your key to continue.")
 ##    st.stop()
 ##else:
-##    st.session_state.key=key##
+##    st.session_state.key=key
