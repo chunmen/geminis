@@ -16,16 +16,5 @@ st.markdown(
     Gemini demo
 '''
 )
-key = st.secrets["my_credentials"]["key"]
+key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"   
 
-st.write("Your key is:", key)
-##if "key" not in st.session_state:
-##    st.session_state.key = None
-
-##key = st.sidebar.text_input("Your key", type="password")
-
-##if not key:
-##    st.info("Please add your key to continue.")
-##    st.stop()
-##else:
-##    st.session_state.key=key
