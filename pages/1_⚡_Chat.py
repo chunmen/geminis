@@ -9,12 +9,7 @@ from io import BytesIO
 from io import StringIO
 import streamlit as st
 
-if "key" not in st.session_state:
-    st.session_state.key = None
-    
-if not st.session_state.key:
-    st.info("Please add your key to continue.")
-    st.stop()
+key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"   
     
 genai.configure(api_key=st.session_state.key)
 
