@@ -23,7 +23,7 @@ if "key" not in st.session_state:
     #st.session_state.key = None
 
 ##key = st.sidebar.text_input("Your key", type="password")
- 
+key =  st.session_state.key
 if not key:
     st.info("Please add your key to continue.")
     st.stop()
