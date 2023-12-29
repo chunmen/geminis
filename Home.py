@@ -16,8 +16,8 @@ st.markdown(
     Gemini demo
 '''
 )
-st.session_state.key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"    
-if "key" not in st.session_state:
+key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"    
+##if "key" not in st.session_state:
     st.session_state.key = None
 
 key = st.sidebar.text_input("Your key", type="password")
@@ -26,4 +26,4 @@ if not key:
     st.info("Please add your key to continue.")
     st.stop()
 else:
-    st.session_state.key=key
+    st.session_state.key=key##
