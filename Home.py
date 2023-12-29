@@ -17,9 +17,10 @@ st.markdown(
 '''
 )
 st.session_state.key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"
+st.write("The key is:", st.session_state.key)
 if "key" not in st.session_state:
-    st.session_state.key = "AIzaSyDIhOkFHdO9gxEbgqIsSDEa96iXMRBJWa8"
-    ##st.session_state.key = None
+    
+    st.session_state.key = None
 
 key = st.sidebar.text_input("Your key", type="password")
  
